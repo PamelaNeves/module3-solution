@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Solution for Module 3</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+
+    <header>
+        <div>
+            <p>Food, LLC</p>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Beef</a></li>
+                    <li><a href="#">Sushi</a></li>
+                </ul>
+            </menu>
+        </div>
+        <h1 class="text-center">Our Menu</h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Chicken</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veritatis ex doloribus cum asperiores officiis officia commodi? Ipsam facere debitis suscipit tempore ipsa fuga ut quae ullam? Corrupti, soluta! Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus debitis illum eveniet, amet magnam accusantium sint, itaque voluptatem velit vel inventore! Mollitia repellat et iste tempora minus ab similique dolor? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minus, atque temporibus nobis ea reiciendis, ipsam quam laboriosam fuga veniam laborum reprehenderit eos nemo, a id vero obcaecati dignissimos veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut optio labore, magni culpa et, officia sunt mollitia vel, nostrum ipsa porro iure! Molestiae tempore, totam molestias quibusdam nesciunt voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem minima nisi facilis ducimus earum repellendus pariatur non, quidem alias animi quod magnam saepe vel accusamus tempora soluta qui ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores sunt magni iure harum itaque quaerat, culpa deleniti debitis nemo labore quibusdam alias praesentium nihil voluptatem sequi cupiditate! Nesciunt, natus tempore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nobis corporis, consequuntur ut perspiciatis non fuga quae consequatur, ratione minima omnis! Error adipisci odit officia illum consequuntur distinctio ipsa atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deleniti. Doloremque repellendus quibusdam ad aspernatur exercitationem, assumenda est, ipsum nemo nesciunt eius esse quam officia excepturi itaque culpa molestias ex. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam quo, aut dolorem impedit odio. Eveniet adipisci magni debitis doloremque facilis delectus ab pariatur dolor quaerat consectetur, laborum placeat repellat!</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por Pamela Neves Javiel para o <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank">Coursera</a>.</p>
+    </footer>
+
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+        
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
