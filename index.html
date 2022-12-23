@@ -11,20 +11,24 @@
 </head>
 <body>
     <header>
-        <div>
-            <p>Food, LLC</p>
-            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-            <menu id="itens">
-                <ul>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Beef</a></li>
-                    <li><a href="#">Sushi</a></li>
-                </ul>
-            </menu>
-        </div>
-        <h1 class="text-center">Our Menu</h1>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand pull-left">
+                      <a href="index.html"><h1>Food, llc</h1></a>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>    
+        </nav>
     </header>
     <main>
+        <h1 class="text-center">Our Menu</h1>
         <article>
             <section>
                 <h2>Chicken</h2>
@@ -36,25 +40,7 @@
         <p>Website created by Pamela Neves Javiel for the <a
             href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"
             target="_blank">Coursera</a>.</p>
-    </footer>
-
-    <script>
-        function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            }else{
-                itens.style.display = 'none'
-            }
-        }
-        
-        function clickMenu() {
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }else{
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+    </footer>   
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
